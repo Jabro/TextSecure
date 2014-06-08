@@ -21,6 +21,11 @@ public class ApnDefaults {
             //T-Mobile USA - Tested: Works
             put("310260", new MmsConnectionParameters("http://mms.msg.eng.t-mobile.com/mms/wapenc", null, null));
 
+            //T-Mobile UK - Untested (http://www.unlockme.co.uk/network-provider-codes.html)
+            put("23430", new MmsConnectionParameters("http://mmsc.t-mobile.co.uk:8002", "149.254.201.135","8080"));
+            put("23431", new MmsConnectionParameters("http://mmsc.t-mobile.co.uk:8002", "149.254.201.135","8080"));
+            put("23432", new MmsConnectionParameters("http://mmsc.t-mobile.co.uk:8002", "149.254.201.135","8080"));
+
             //AT&T - Testd
             put("310410", (new MmsConnectionParameters("http://mmsc.cingular.com", "wireless.cingular.com", "80"))
                                                   .add("http://mmsc.mobile.att.net", "proxy.mobile.att.net", "80"));
